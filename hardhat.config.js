@@ -1,7 +1,9 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const PRIVATE_KEY =
+  process.env.PRIVATE_KEY ||
+  "0xabc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1";
 const INFURA_PROJECT_ID = process.env.INFURA_PROJECT_ID;
 
 /** @type import('hardhat/config').HardhatUserConfig */
